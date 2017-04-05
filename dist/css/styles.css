@@ -829,16 +829,40 @@ there.
   z-index: 999;
   box-shadow: 0 0 12px 6px rgba(0, 0, 0, 0.2); }
 
-.spacer {
-  width: 100%;
-  height: 150vh; }
+.menu-active {
+  z-index: -10; }
+
+.menu {
+  display: none; }
+
+.open {
+  display: block !important;
+  position: fixed;
+  z-index: 10; }
+
+.menu-icon-close {
+  font-size: 4em !important; }
+
+.menu-open {
+  background: #FAFAFA;
+  display: none;
+  height: 100vh;
+  width: 30%;
+  text-align: center;
+  z-index: 10;
+  transition: all .5s ease-in-out; }
+  .menu-open ul {
+    list-style-type: none; }
+    .menu-open ul li {
+      margin-top: 25px; }
+      .menu-open ul li a {
+        text-decoration: none; }
 
 .left {
   text-align: left; }
 
 .card {
   border-bottom: 3px solid #eee;
-  height: 320px;
   padding: 1rem;
   transition: all .3s ease-in-out; }
   .card:hover {
@@ -887,27 +911,28 @@ section {
   width: 100%;
   transition: all .3s ease-in-out; }
   .navbar ul {
-    list-style: none; }
+    list-style: none;
+    text-align: center; }
     .navbar ul li {
       display: inline-block;
-      margin-top: 10px; }
+      margin-top: 20px; }
   .navbar a {
-    margin: 10px 15px;
     color: #FAFAFA;
     text-decoration: none;
-    padding: 2rem; }
+    padding: 3rem 2rem;
+    height: 100%; }
     .navbar a:hover {
       background-color: #FAFAFA;
       color: #2196F3; }
 
 header {
-  background: linear-gradient(rgba(21, 101, 192, 0.8), rgba(21, 101, 192, 0.6)), url("/img/banner-bg.jpg");
+  background: linear-gradient(rgba(21, 101, 192, 0.8), rgba(21, 101, 192, 0.6)), url("/img/banner-bg-blur.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
   color: #FAFAFA;
-  padding-top: 6rem;
-  height: 50vh;
+  padding-top: 20%;
+  height: 90vh;
   overflow: hidden; }
   header .page-lead {
     text-align: center;
@@ -1013,3 +1038,21 @@ footer {
     footer .footer-tag a {
       text-decoration: none;
       color: #FAFAFA; }
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    text-align: center;
+    color: #2196F3;
+    position: fixed;
+    background: #FAFAFA;
+    border-radius: 50%;
+    padding: 2rem;
+    width: 3rem;
+    margin-top: 25px;
+    margin-left: 25px;
+    font-size: 1.5em; }
+  .navbar {
+    display: none; }
+    .navbar ul li {
+      display: block; } }

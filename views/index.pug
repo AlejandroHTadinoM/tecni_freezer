@@ -9,6 +9,34 @@ html(lang="es")
 		link(rel='stylesheet' href='css/styles.css')
 		script(src="https://use.fontawesome.com/8940ad064b.js")
 	body
+		
+		.menu
+			i(class="fa fa-bars" aria-hidden="true")
+
+		.menu-open
+			.container
+				.row
+					ul
+						li.twelve.columns
+							a
+								i(class="fa fa-times" aria-hidden="true").menu-icon-close
+						li.nav-item.twelve.columns
+							a(href="#home")
+								|INICIO
+						li.nav-item.twelve.columns
+							a(href="#service")
+								|SERVICIOS
+						li.nav-item.twelve.columns
+							a(href="#about")
+								|LA EMPRESA
+						li.nav-item.twelve.columns
+							a(href="#description")
+								|DESCRIPCION
+						li.nav-item.twelve.columns
+							a(href="#contact")
+									|CONTACTOS
+
+
 		nav.navbar
 			.container
 				.row
@@ -51,7 +79,7 @@ html(lang="es")
 						.row
 							.four.columns
 								.service-tag
-									.card
+									.card.card-r
 										.service-icon
 											include ../img/wrench.svg
 										h4
@@ -59,14 +87,14 @@ html(lang="es")
 
 							.four.columns
 								.service-tag
-									.card
+									.card.card-r
 										.service-icon
 											include ../img/worker.svg
 										h4
 										p Ofrecemos el servicio de mantenimiento preventivo y correctivo como el diseño y fabricación de cuartos fríos y sistemas de refrigeración, garantizando a nuestro cliente, la disponibilidad de sus equipos en todo momento. 
 							.four.columns
 								.service-tag
-									.card
+									.card.card-r
 										.service-icon
 											include ../img/emergency.svg
 										h4

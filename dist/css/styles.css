@@ -844,11 +844,12 @@ there.
   font-size: 4em !important; }
 
 .menu-open {
-  background: #FAFAFA;
+  background: rgba(255, 255, 255, 0.9);
   display: none;
   height: 100vh;
-  width: 30%;
+  width: 70%;
   text-align: center;
+  box-shadow: 0 0 12px 6px rgba(0, 0, 0, 0.2);
   z-index: 10;
   transition: all .5s ease-in-out; }
   .menu-open ul {
@@ -926,12 +927,13 @@ section {
       color: #2196F3; }
 
 header {
-  background: linear-gradient(rgba(21, 101, 192, 0.8), rgba(21, 101, 192, 0.6)), url("/img/banner-bg-blur.jpg");
+  background: linear-gradient(rgba(21, 101, 192, 0.9), rgba(21, 101, 192, 0.6)), url("../img/banner-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    background-attachment: fixed;
   color: #FAFAFA;
-  padding-top: 20%;
+  padding-top: 10%;
   height: 90vh;
   overflow: hidden; }
   header .page-lead {
@@ -1031,11 +1033,15 @@ footer {
     text-transform: uppercase;
     margin-bottom: 15px;
     font-weight: 300; }
+  footer a {
+    text-decoration: none;
+    font-size: 2em; }
   footer .footer-tag {
     text-align: center;
     margin-top: 8rem;
     opacity: .6;
-    font-weight: 300; }
+    font-weight: 300;
+    font-size: 1.2em; }
     footer .footer-tag:hover {
       opacity: 1; }
     footer .footer-tag a {

@@ -49,7 +49,7 @@ $(window).scroll(function () {
             'transform': 'translate(0px, ' + (wScroll / 4) + '%)'
         });
         $('header').css({
-            'background-position': 'center ' + -(wScroll / 10) + '%' 
+            'background-position': 'center ' + (-wScroll / 10) + '%' 
         });
     };
     if (wScroll > navPos) {

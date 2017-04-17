@@ -167,41 +167,41 @@ html(lang="es")
 					.container
 						.row
 							form(action="process.php", id="formulario", method="POST")
+
 								.four.columns
 									label(for="nombre") Nombre
 									input(type="text", required, name="nombre", placeholder="Inserte su nombre")
-								.four.columns
+
 									label(for="email") Asunto
 									input(type="text", required, placeholder="Inserte el asunto del mensaje", name="asunto")
-								.four.columns
+
 									label(for="email") E-mail
 									input(type="email", required, placeholder="Ingrese su dirección de E-mail", name="email")
 
-						.row
-							.six.columns
-								label(for="email") Mensaje
-								textarea(name="mensaje", rows="4", required placeholder="Deje su mensaje")
-							.six.columns
-								input(type="reset", class="reset", value="Borrar Todo")
-								input(type="submit", class="enviar", value="Enviar")
+								.six.columns
+									label(for="email") Mensaje
+									textarea(name="mensaje", rows="4", required placeholder="Deje su mensaje")
+
+									input(type="reset", class="reset", value="Borrar Todo")
+									input(type="submit", class="enviar", value="Enviar")
 
 		footer
 			.container
 				.row
 					.four.columns
 						h3.contact-item correo
-						p info@tecni-freezer.com
+						a(href="mailto:info@tecni-freezer.com").footer-link info@tecni-freezer.com
 					.four.columns
 						h3.contact-item telefono
-						p (+593) 2603-6629
+						a(href="cel:+593-2603-6629").footer-link (+593) 2603-6629
 					.four.columns
 						h3.contact-item telefono
-						p (+593) 9980-01923
+						a(href="cel:+593-9980-01923").footer-link (+593) 9980-01923
 
 				.row
 					.twelve.columns
 						h4.footer-tag
-							a(href="//clicnovo.com/").clicnovo Clicnovo
+							a(href="//clicnovo.com/").clicnovo Diseño por: Clicnovo
 		//- Scripts ----------------------------------------
 		script(src="js/jquery.min.js")
 		script(src="js/functions.js")

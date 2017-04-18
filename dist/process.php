@@ -9,29 +9,18 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 	exit();
 }
 $mail = new PHPMailer;
-$mail->isSMTP();
 $mail->CharSet = 'UTF-8';
-$mail->Host = 'smtp.live.com';
-$mail->SMTPAuth = true;
-$mail->Username = 'user@example.com';
-$mail->Password = 'secret';
-$mail->SMTPSecure = 'tls';
-$mail->Port = 587;
-$mail->setFrom('noreply@dirnovo.com', 'Clicnovo Mailer');
-$mail->addAddress('joe@example.net', 'Joe User');
-$mail->addAddress('info@tecni-freezer.com');
+$mail->SMTPDebug = 3;
+$mail->setFrom('noreply@tecniserviciosyreparaciones.com', 'Clicnovo Mailer');
+$mail->addAddress('carmenste@hotmail.com');
 $mail->addReplyTo($email, $nombre);
-$mail->addReplyTo($email, $nombre);
-
-$mail->isHTML(true);
-
 $mail->Subject = "Formulario: " . $asunto;
+$mail->isHTML(true);
 $mail->Body = $mensaje;
 
-if(!$mail->send()) {
-    echo 'Message could not be sent.';
-    echo 'Mailer Error: ' . $mail->ErrorInfo;
+if (!$mail->send()) {
+    echo "<span class=\"error\">Mailer Error: " . $mail->ErrorInfo . "</span>";
 } else {
-    echo 'Message has been sent';
+    echo "<span class=\"mailok\">Mensaje enviado!</span>";
 }
 ?>

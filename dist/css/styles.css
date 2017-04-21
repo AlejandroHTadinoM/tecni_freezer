@@ -966,7 +966,7 @@ header {
   margin-top: 6rem; }
 
 .about {
-  background: linear-gradient(rgba(21, 101, 192, 0.8), rgba(21, 101, 192, 0.6)), url("https://s-media-cache-ak0.pinimg.com/originals/ea/b6/8a/eab68a1334b0860c74e3e602e78b15a3.jpg");
+  background: linear-gradient(rgba(21, 101, 192, 0.8), rgba(21, 101, 192, 0.6)), url("../img/window-bg.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1032,23 +1032,20 @@ footer {
   footer .contact-item {
     text-transform: uppercase;
     margin-bottom: 15px;
-    font-weight: 300; }
+    font-weight: 400; }
   footer a {
     text-decoration: none;
-    font-size: 2em; }
-  footer .footer-tag {
+    font-size: 2em;
+    color: #FAFAFA; }
+  footer .footer-link {
     text-align: center;
-    margin-top: 8rem;
-    opacity: .6;
+    margin-top: 1.2rem;
     font-weight: 300;
-    font-size: 1.2em; }
-    footer .footer-tag:hover {
-      opacity: 1; }
-    footer .footer-tag a {
-      text-decoration: none;
-      color: #FAFAFA; }
-  footer .clicnovo {
-    font-size: 1em; }
+    font-size: 1.2em;
+    display: block; }
+  footer .footer-tag {
+    margin: 2rem 0;
+    font-size: .6em; }
 
 @media (max-width: 768px) {
   .menu {

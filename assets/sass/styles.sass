@@ -87,6 +87,19 @@
 		background-color: #1565C0
 		box-shadow: 0 2px 6px 2px rgba(0, 0, 0, .2)
 
+.sub-title
+	text-align: center
+	text-transform: uppercase
+	color: #333
+
+	&:after
+		content: ''
+		display: block
+		margin: 1rem auto
+		width: 20%
+		height: 1px
+		background-color: #ccc
+
 body
 	font-family: 'Raleway'
 
@@ -111,7 +124,6 @@ section
 			margin-top: 20px
 
 	a
-		
 		color: #FAFAFA
 		text-decoration: none
 		padding: 3rem 2rem
@@ -122,13 +134,13 @@ section
 				color: #2196F3
 
 header
-	background: linear-gradient(rgba(#1565C0, .9), rgba(#1565C0, .6)), url("../img/banner-bg.jpg")
+	background: linear-gradient(rgba(#FFF, .6), rgba(#FAFAFA, .4)), url("../img/banner-bg.jpg")
 		size: cover
 		repeat: no-repeat
 		position: center center
 		attachment: fixed
-	color: #FAFAFA
-	padding-top: 10%
+	color: #212121
+	padding-top: 2rem
 	height: 90vh
 	overflow: hidden
 
@@ -155,6 +167,22 @@ header
 
 		&:hover
 			box-shadow: 0 0 8px 0 rgba(255, 255, 255, .4)
+
+	.brands
+		margin-top: 30px
+
+		ul
+			margin: 0 auto
+
+			li
+				margin-left: 6px
+				display: inline-block
+
+				&:first-child
+					margin-left: 0
+
+			img 
+				width: 100px
 
 .service
 
@@ -185,25 +213,6 @@ header
 
 .brand-container
 	text-align: center
-
-.brands
-	background-color: #ECEFF1
-
-	ul, li
-		display: inline-block
-
-	ul
-		margin: 0 auto
-		opacity: .5
-
-		li
-			margin-left: 6px
-
-			&:first-child
-				margin-left: 0
-
-		img 
-			width: 80px
 
 .contact
 

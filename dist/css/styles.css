@@ -857,7 +857,10 @@ there.
     .menu-open ul li {
       margin-top: 25px; }
       .menu-open ul li a {
-        text-decoration: none; }
+        display: block;
+        text-decoration: none;
+        width: 100%;
+        font-size: 2em; }
 
 .left {
   text-align: left; }
@@ -1032,20 +1035,21 @@ footer {
   footer .contact-item {
     text-transform: uppercase;
     margin-bottom: 15px;
-    font-weight: 400; }
+    font-weight: 400;
+    font-size: 1.2em; }
   footer a {
     text-decoration: none;
-    font-size: 2em;
+    font-size: 1.1em;
     color: #FAFAFA; }
   footer .footer-link {
     text-align: center;
     margin-top: 1.2rem;
     font-weight: 300;
-    font-size: 1.2em;
+    font-size: 1em;
     display: block; }
   footer .footer-tag {
     margin: 2rem 0;
-    font-size: .6em; }
+    font-size: 1em; }
 
 @media (max-width: 768px) {
   .menu {

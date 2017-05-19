@@ -5,7 +5,7 @@ $(window).scroll(function () {
     };
     if (wScroll <= servicePos) {
         $('.page-lead').css({
-            'transform': 'translate(0px, ' + (wScroll / 4) + '%)'
+            'transform': 'translate(0px, ' + (wScroll / 8) + '%)'
         });
         $('header').css({
             'background-position': 'center ' + (-wScroll / 10) + '%' 

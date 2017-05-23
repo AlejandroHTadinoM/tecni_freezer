@@ -869,6 +869,9 @@ there.
   border-bottom: 3px solid #eee;
   padding: 1rem;
   transition: all .3s ease-in-out; }
+  .card p,
+  .card li {
+    font-weight: 500; }
   .card:hover {
     border-bottom: 3px solid #2196F3;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); }
@@ -911,6 +914,14 @@ there.
     width: 20%;
     height: 1px;
     background-color: #ccc; }
+
+.phone {
+  content: '';
+  display: inline-block;
+  background: url("../img/phone-receiver.svg");
+    background-size: contain;
+  width: .6em;
+  height: .6em; }
 
 body {
   font-family: 'Raleway'; }
@@ -959,7 +970,7 @@ header {
     text-transform: uppercase;
     font-weight: 200; }
   header .cta {
-    font-weight: 200;
+    font-weight: 500;
     box-sizing: border-box;
     color: #1565C0;
     text-decoration: none;
@@ -975,14 +986,11 @@ header {
   header .brands {
     margin: 30px auto;
     text-align: left;
-    overflow: hidden;
-    width: 280px; }
-    header .brands ul {
-      margin: 0 auto; }
-      header .brands ul li {
-        display: inline-block; }
-        header .brands ul li img {
-          width: 100%; }
+    overflow: hidden; }
+    header .brands li {
+      display: inline-block; }
+      header .brands li img {
+        width: 140px; }
 
 .service .service-tag {
   text-align: center; }

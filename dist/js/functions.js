@@ -44,7 +44,7 @@ $('.nav-item a').on('click', function(event) {
         event.preventDefault();
         var hash = this.hash;
         $('html, body').animate({
-            scrollTop: $(hash).offset().top
+            scrollTop: ($(hash).offset().top - ($('.navbar').height() * 1.5))
         }, 800, function(){
             window.location.hash = hash;
         });
@@ -79,6 +79,8 @@ $(window).scroll(function () {
         });
     };
 });
+sliderContainer.width(slideW);
+slider.height(slideW);
 slider.width(slideW * slide.length);
 function startSlider () {
 	timer = setInterval(function () {

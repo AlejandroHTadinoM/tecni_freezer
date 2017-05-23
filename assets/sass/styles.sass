@@ -50,6 +50,10 @@
 	border-bottom: 3px solid #eee
 	padding: 1rem
 	transition: all .3s ease-in-out
+
+	p,
+	li
+		font-weight: 500
 	
 
 	&:hover
@@ -98,6 +102,14 @@
 		width: 20%
 		height: 1px
 		background-color: #ccc
+
+.phone
+	content: ''
+	display: inline-block
+	background: url("../img/phone-receiver.svg")
+		size: contain
+	width: .6em
+	height: .6em
 
 body
 	font-family: 'Raleway'
@@ -153,7 +165,7 @@ header
 		font-weight: 200
 
 	.cta
-		font-weight: 200
+		font-weight: 500
 		box-sizing: border-box
 		color: #1565C0
 		text-decoration: none
@@ -172,16 +184,12 @@ header
 		margin: 30px auto
 		text-align: left
 		overflow: hidden
-		width: 280px
 
-		ul
-			margin: 0 auto
+		li
+			display: inline-block
 
-			li
-				display: inline-block
-
-				img 
-					width: 100%
+			img 
+				width: 140px
 
 .service
 

@@ -1,3 +1,5 @@
+sliderContainer.width(slideW);
+slider.height(slideW);
 slider.width(slideW * slide.length);
 function startSlider () {
 	timer = setInterval(function () {

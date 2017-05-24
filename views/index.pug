@@ -8,11 +8,14 @@ html(lang="es")
 		meta(name="viewport", content="width=device-width, initial-scale=1")
 		link(rel='stylesheet' href='css/styles.css')
 		script(src="https://use.fontawesome.com/8940ad064b.js")
+
 	body
-		
+
+		//- Menu responsive icon ========================================
 		.menu
 			i(class="fa fa-bars" aria-hidden="true")
 
+		//- Menu responsive ========================================
 		.menu-open
 			.container
 				.row
@@ -30,6 +33,8 @@ html(lang="es")
 							a(href="#whashing") LAVADORAS - SECADORAS
 						li.nav-item.twelve.columns
 							a(href="#contact") CONTACTOS
+
+		//- Navbar ========================================
 		nav.navbar
 			.container
 				.row
@@ -45,6 +50,8 @@ html(lang="es")
 								a(href="#whashing") LAVADORAS - SECADORAS
 							li.nav-item
 								a(href="#contact") CONTACTOS
+
+		//- Home Landing ========================================
 		header#home
 			.container
 				.row
@@ -76,11 +83,17 @@ html(lang="es")
 											img(src="img/brand-7.png", alt="Haceb")
 										li.brand-item
 											img(src="img/brand-1.png", alt="Centrales")
+
+		//- Main content ========================================
 		main
 			article
+
+				//- Service ========================================
 				section.service#service
 					.container
 						.row
+
+							//- Card Left ========================================
 							.six.columns
 								.service-tag
 									.card.card-r
@@ -88,6 +101,8 @@ html(lang="es")
 											img(src="img/img-service-2.jpg" alt="Servicio de reparación y mantenimiento de linea blanca")
 										p Somos una empresa especializada en el mantenimiento preventivo y correctivo de refrigeradores, frigoríficos y congeladores, de las marcas General Electric, Mabe, Samsung, Whirlpool, Electrolux, LG, Daewoo Y Frigidaire
 										p Trabajamos con repuestos 100% originales, lo que nos permite garantizarle nuestro trabajo. El servicio que ofrecemos es <strong>A DOMICILIO</strong>. Técnicos profesionales cubren la ciudad de Quito, Cumbaya, Tumbaco y Los Valles.
+
+							//- Card Right ========================================
 							.six.columns
 								.service-tag
 									.card.card-r
@@ -100,18 +115,26 @@ html(lang="es")
 											li No centrifuga
 											li No vota el agua
 											li Presenta un codigo de error
-										p Llame YA 0998001923 o 6032329 trabajamos con las marcas General Electric, Mabe, Samsung, Whirlpool, Electrolux, LG, Daewoo Y Frigidaire
+										p Llame YA 0998001923 o 6032329 trabajamos con las marcas General Electric, Mabe, Samsung, Whirlpool, Electrolux, LG, Daewoo Y Frigidaire.
+
+						//- CTA Tag ========================================
 						.row
 							.twelve.columns
 								.cta-tag
 									p Brindamos servicios de atención inmediata las 24 horas del día para llamadas de emergencia. 
 									p Estamos ubicados en Quito - Ecuador
+
+				//- About ========================================
 				section.about#about
 					.container
 						.row
+
+							//- Blurp ========================================
 							.twelve.columns
 								p TecniFreezer somos una empresa que se dedica a la reparación y mantenimiento e instalación de refrigeradores, lavadoras, secadoras y de equipos de audio y video contamos con un selecto grupo de técnicos capacitados para las respectivas áreas.
 								p Trabajamos con repuestos originales en lo que es General Electric, Mabe, Samsung, Whirlpool, Electrolux, LG, Daewoo Y Frigidaire, lo que nos permite garantizar nuestro trabajo.
+
+						//- CTA ========================================
 						.row
 							.four.columns
 								a(href="tel:02603-6629").btn.call-btn <i class="fa fa-phone" aria-hidden="true"></i>02603-6629
@@ -119,8 +142,12 @@ html(lang="es")
 								a(href="tel:09980-01923").btn.call-btn <i class="fa fa-phone" aria-hidden="true"></i>09980-01923
 							.four.columns
 								a(href="mailto:info@tecni-freezer.com").btn.env-btn <i class="fa fa-envelope" aria-hidden="true"></i> info@tecni-freezer.com
+
+				//- Skills ========================================				
 				section.skills
 					.container
+
+						//- Frezeer ========================================
 						.row#frezeer
 							.six.columns
 								h2 Reparación de refrigeradores, frigoríficos y congeladores a domicilio.
@@ -139,6 +166,8 @@ html(lang="es")
 									a(href="tel:09980-01923").btn.call-btn <i class="fa fa-phone" aria-hidden="true"></i> 09980-01923
 							.six.columns
 								img(src="img/img-service-1.jpg").service-img
+
+						//- Audio ========================================
 						.row#audio
 							.six.columns
 								img(src="img/tv-icon.jpg").service-img
@@ -151,6 +180,8 @@ html(lang="es")
 									a(href="tel:02603-6629").btn.call-btn <i class="fa fa-phone" aria-hidden="true"></i> 02603-6629
 								.six.columns
 									a(href="tel:09980-01923").btn.call-btn <i class="fa fa-phone" aria-hidden="true"></i> 09980-01923
+
+						//- Whashing ========================================
 						.row#whashing
 							.six.columns
 								h2 Mantenimiento reparación e instalación de lavadoras y secadoras en Quito, Cumbaya, Tumbaco y los Valles.
@@ -168,6 +199,8 @@ html(lang="es")
 									a(href="tel:09980-01923").btn.call-btn <i class="fa fa-phone" aria-hidden="true"></i> 09980-01923
 							.six.columns
 								img(src="img/img-service-3.jpg").service-img
+
+				//- Contatc ========================================
 				section.contact#contact
 					.container
 						h3.sub-title contactos
@@ -185,6 +218,8 @@ html(lang="es")
 									textarea(name="mensaje", rows="4", required placeholder="Deje su mensaje")
 									input(type="reset", class="reset", value="Borrar Todo")
 									input(type="submit", class="enviar", value="Enviar")
+		
+		//- Footer ========================================
 		footer
 			.container
 				.row
@@ -202,6 +237,7 @@ html(lang="es")
 					.twelve.columns
 						h4.footer-tag
 							a(href="//clicnovo.com/").clicnovo Copyright &copy; Clicnovo
+							
 		//- Scripts ----------------------------------------
 		script(src="js/jquery.min.js")
 		script(src="js/functions.js")
